@@ -1,0 +1,17 @@
+(*) Pengaturan Hak Akses:
+- yang kita buat sekarang masih untuk admin, dan admin bisa akses semua. saatnya dibuat akses per seksi.
+
+1. Admin: bisa akses semua (CRUD).
+2. Kepala RS: bisa akses semua (CRUD).
+3. Staff Rekam Medis: Reg. Pasien, Rekam Medis, Resep, Pasien, Pegawai (CRUD)l
+4. Staff Reg. Pasien: Registrasi Pasien, Pasien (CRUD).
+5. Staff UGD: Idem ^
+6. Staff Keuangan: Cetak kwitansi (bag. checkout), Reg Pasien, Rekam Medis, Laporan (R), Checkout, Resep (CRUD)
+7. Staff Apotik: Semua obat2an (CRUD), Resep & Rekam Medis (R).
+8. Staff Dokter: Bagian Dokter (CRUD).
+
+(**) autoNumeric & numberOnly
+Semua yang ada class tersebut tidak bisa menginput angka > 1000 kalau dibuka di google chrome. Contohnya di bagian Obat, Harga Modal/Jual/Stok.
+
+(***)
+Detail Resep add/edit error button back nya.

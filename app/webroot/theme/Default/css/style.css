@@ -1,0 +1,510 @@
+/* 
+    Document   : style
+    Created on : 21 Mei 2012
+    Author     : Joko Hermanto
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body {
+    background: #eaeaea url(../img/bg_inv_header.jpg) top left repeat-x;
+    font-family: Tahoma, Arial;
+    font-size: 100%;
+    color: #303030;
+}
+
+h1 {
+    background: transparent url(../img/bg_inv_heading.jpg) left top repeat-x;
+    height: 40px;
+    padding: 16px 20px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+h1.loginTitle {
+    background: none;
+    color: #0289d0;
+    text-align: center;
+}
+
+h2 {
+    padding: 10px 20px;
+    color: #0289d0;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.giveMeSpace { margin-bottom: 1em; clear: both; padding: 0; }
+.numbersOnly { text-align: right; }
+
+#container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+#loginWrapper {
+    margin: 63px auto 0;
+    width: 320px;
+}
+
+.loginHeader {
+	margin:0 auto;
+	text-align:center;
+}
+
+#loginWrapper form p {
+	padding:0 40px;
+}
+
+#loginWrapper form p.inputWrapper {
+    clear: both;
+    margin-bottom: 10px;
+}
+
+#loginWrapper form p label {
+    font-size: 12px;
+    color: #666;
+}
+#loginWrapper form p input {}
+#loginWrapper form p input.text {
+    font-size: 12px;
+    font-style: italic;
+    color: #afafaf;
+}
+
+.buttonWrapper {
+    overflow: hidden;
+}
+
+    .buttonWrapper span.btnClose {
+        background: transparent url(../img/sprite.png) right top no-repeat;
+        padding-right: 11px;
+        height: 37px;
+        cursor: pointer;
+        display: block;
+        float: left;
+        margin-right: 10px;
+    }
+
+    .buttonWrapper span.btnClose.last { margin: 0; }
+
+        .buttonWrapper span input.btnIco,
+        .buttonWrapper span a.linkIco {
+            background: transparent url(../img/sprite.png) left top no-repeat;
+            height: 37px;
+            border: none;
+            cursor: pointer;
+            color: #303030;
+            padding-left: 35px;
+            font-size: 11px;
+            font-weight: bold;
+        }
+        
+        .buttonWrapper span a.linkIco {
+            display: block;
+            padding-top: 15px;
+            height: 22px;
+        }
+
+        .buttonWrapper span input.btnIco:hover,
+        .buttonWrapper span a.linkIco:hover {
+            color: #0289d0;
+        }
+
+        .buttonWrapper input.btnIco.icoSearch { background-position: 0 -38px; }
+        
+        .buttonWrapper input.btnIco.icoAdd,
+        .buttonWrapper a.linkIco.icoAdd { background-position: 0 -76px; }
+        
+        .buttonWrapper input.btnIco.icoSubmit,
+        .buttonWrapper a.linkIco.icoSubmit { background-position: 0 -114px; }
+        
+        .buttonWrapper input.btnIco.icoCancel,
+        .buttonWrapper a.linkIco.icoCancel { background-position: 0 -152px; }
+        
+        .buttonWrapper input.btnIco.icoCancel:hover,
+        .buttonWrapper a.linkIco.icoCancel:hover { color: #D00202; }
+        
+        .buttonWrapper input.btnIco.icoLogin { background-position: 0 -190px; padding-left: 30px; }
+
+    #header {
+        color: #fff;
+        font-size: 12px;
+        width: 100%;
+        padding-top: 20px;
+        height: 21px;
+    }
+    
+    span.logoTitle {        
+        font-weight: bold;
+        display: block;
+        float: left;
+        width: 30%;
+    }
+    
+    span.loginInformation {
+        display: block;
+        float: right;
+        width: 70%;
+        text-align: right;
+    }
+    
+        a.logout:active, a.logout:link, a.logout:visited {
+            color: #f03c3c;
+            font-weight: bold;
+        }
+        
+        a.logout:hover { text-decoration: underline; }
+        
+    #mainMenu {
+        margin-bottom: 1em;
+    }
+    
+        #mainMenu > ul {}
+        
+        #mainMenu > ul > li {
+            float: left;
+            margin-right: 2px;
+            position: relative;
+        }
+        
+        #mainMenu > ul > li:last-child { margin: 0; }
+
+            #mainMenu > ul > li a:link, #mainMenu > ul > li a:visited, #mainMenu > ul > li a:active {
+                background: transparent url(../img/bg_inv_menu.jpg) left top repeat-x;
+                height: 27px;
+                display: block;
+                padding: 25px 10px 0;
+                font-size: 14px;
+                color: #303030;
+            }
+
+            #mainMenu > ul > li a:hover {
+                background: transparent url(../img/bg_inv_menu_hover.jpg) left top repeat-x;
+                color: #0289d1;                
+            }
+            
+            #mainMenu > ul > li > ul { 
+                display: none; 
+                position: absolute; 
+                background: #f4f4f4; 
+                top: 52px;
+                left: 0;
+                z-index: 9999;
+            }
+            #mainMenu > ul > li:hover > ul { display:block }
+            #mainMenu > ul > li > ul > li { 
+                float: none; 
+                width: 150px; 
+            }
+            #mainMenu > ul > li > ul > li > a:link, #mainMenu > ul > li > ul > li a:visited, #mainMenu > ul > li > ul > li a:active {
+                background: none;
+            }
+            #mainMenu > ul > li > ul > li a:hover {
+                background: #eaeaea;
+            }
+            
+            
+    #logoWrapper {
+        width: 100%;
+        position: relative;
+        margin-bottom: 1em;
+		height: 100px;
+		background:#303030 url(../img/rsu.png);
+    }
+
+    #logoWrapper #logo a {
+        padding: 0 0 0 1em;
+        display: block;
+        float: left;
+    }
+	
+	#logoWrapper #logo .logoRSD {
+		float:right;
+		margin-top: -98px;
+		margin-left:910px;
+	}
+
+    #logoWrapper #logo h1 {
+/*		background-color:#303030;*/
+		background:#303030 url(../img/rsu.png);
+		padding:29px 120px;
+		text-align:center;
+    }
+
+form input.text {
+    height: 23px;
+    border: 1px solid #b4b4b4;
+    padding: 5px;
+}
+
+form input.text.datepicker { margin-right: 10px; }
+
+form select {
+    border: 1px solid #b4b4b4;
+    padding: 7px;
+}
+
+form textarea {
+    border: 1px solid #b4b4b4;
+    width: 500px;
+    height: 100px;
+}
+
+.searchFormWrapper {
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+}
+
+.searchFormWrapper table { margin: 0; }
+
+.searchFormWrapper table tr th {
+    background:  none;
+    color: #333;
+}
+
+form.search input.text {
+    color: #afafaf;    
+    font-style: italic;
+    float: left;
+    margin: 2px 5px 0 0;    
+}
+
+.buttonInputWrapper {
+    text-align: center;
+}
+
+    .buttonInputWrapper input.ico, .buttonInputWrapper a.ico {
+        background: transparent url(../img/sprite.png) left -38px no-repeat;
+        height: 38px;
+        display: block;
+        float: left;    
+        border: none;
+        padding: 0 0 0 35px;
+        color: #303030;
+        font-size: 14px;
+    }
+    
+    .buttonInputWrapper a.ico {
+        padding-top: 15px;
+        height: 23px;
+        font-size: 80%;
+    }
+
+    .buttonInputWrapper input.ico:hover, .buttonInputWrapper a.ico:hover {
+        cursor: pointer;
+        color: #0289d0;
+    }
+
+        .buttonInputWrapper input.ico.btnSearch,
+        .buttonInputWrapper a.ico.btnSearch { background-position: 0 -38px; }
+        
+        .buttonInputWrapper input.ico.btnAdd, 
+        .buttonInputWrapper a.ico.btnAdd { background-position: 0 -76px; }        
+        
+        .buttonInputWrapper input.ico.btnSubmit,
+        .buttonInputWrapper a.ico.btnSubmit { background-position: 0 -114px; }
+        
+        .buttonInputWrapper input.ico.btnCancel,
+        .buttonInputWrapper a.ico.btnCancel { background-position: 0 -152px; }
+
+    .buttonInputWrapper span {
+        background: transparent url(../img/sprite.png) left top no-repeat;
+        height: 38px;
+        display: block;
+        float: left;  
+        width: 10px;
+        margin-right: 10px;
+    }
+    
+    .buttonInputWrapper span.last { margin: 0; }
+
+#contentWrapper {
+    border: 1px solid #afafaf;
+    width: 982px;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+#contentWrapper table {
+    width: 100%;
+    font-size: 12px;
+    text-align: left;
+/*    margin-bottom: 1em;*/
+}
+
+#contentWrapper table tr.even { background: #f4f4f4; }
+#contentWrapper table tr.odd { background: #fff; }
+
+#contentWrapper table tr th {
+    background: transparent url(../img/bg_inv_table_header.jpg) left top repeat-x;
+    height: 30px;
+    padding: 5px 10px;    
+    color: #fff;
+    font-weight: bold;    
+}
+
+#contentWrapper table tr th a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#contentWrapper table tr td {
+    height: 30px;
+    padding: 5px 10px;
+    color: #303030;
+    border-bottom: 1px solid #afafaf;
+}
+#contentWrapper table tr td.container {
+    padding: 0;
+    height: auto;
+    border: none;
+}
+
+a.link:link, a.link:visited, a.link:active {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+a.link:hover { text-decoration: underline; }
+
+a.link.add { color: #009900; }
+a.link.view { color: #ff6600; }
+a.link.edit { color: #0289d0; }
+a.link.delete { color: #e40000; }
+
+#footer { margin-bottom: 2em; }
+
+#footer p {
+    font-size: 11px;
+    color: #303030;
+    text-align: center;
+}
+
+/*===== MESSAGE ===*/
+.msg { font-size: 12px; padding: 10px; margin-bottom: 10px; }
+.msg.notice {border:2px solid #B8E2FB; background-color:#E8F6FF;}
+.msg.success {border:2px solid #BBDF8D; background-color:#EAF7D9;}
+.msg.error {border:2px solid #FFAEAE; background-color:#FEEBEB;}
+
+.error-message {
+    font-weight: bold;
+    color: #a00;
+    font-size: 10px;
+    padding: 3px 0;
+}
+
+/*-------------------------PAGING--------------------------*/
+.paging {
+	color: #ccc;
+	margin-top: 1em;
+	clear:both;
+}
+.paging .current,
+.paging .disabled,
+.paging a {
+	text-decoration: none;
+	padding: 5px 8px;
+	display: inline-block
+}
+.paging > span {
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-left: 0;
+}
+.paging > span:hover {
+	background: #efefef;
+}
+.paging .prev {
+	border-left: 1px solid #ccc;
+	-moz-border-radius: 4px 0 0 4px;
+	-webkit-border-radius: 4px 0 0 4px;
+	border-radius: 4px 0 0 4px;
+}
+.paging .next {
+	-moz-border-radius: 0 4px 4px 0;
+	-webkit-border-radius: 0 4px 4px 0;
+	border-radius: 0 4px 4px 0;
+}
+.paging .disabled {
+	color: #ddd;
+}
+.paging .disabled:hover {
+	background: transparent;
+}
+.paging .current {
+	background: #efefef;
+	color: #c73e14;
+}
+/*-------------------------PAGING--------------------------*/
+.w_1 {width:1em;}.w_2 {width:2em}.w_3 {width:3em}.w_4 {width:4em}.w_5 {width:5em}.w_6 {width:6em}.w_7 {width:7em}.w_8 {width:8em}.w_9 {width:9em}.w_10 {width:10em}.w_11 {width:11em}.w_12 {width:12em}.w_13 {width:13em}.w_14 {width:14em}.w_15 {width:15em}.w_16 {width:16em}.w_17 {width:17em}.w_18 {width:18em}.w_19 {width:19em}.w_20 {width:20em}.w_21 {width:21em}.w_22 {width:22em}.w_23 {width:23em}.w_24 {width:24em}.w_25 {width:25em}.w_26 {width:26em}.w_27 {width:27em}.w_28 {width:28em}.w_29 {width:29em}.w_30 {width:30em}.w_31 {width:31em}.w_32 {width:32em}.w_33 {width:33em}.w_34 {width:34em}.w_35 {width:35em}.w_36 {width:36em}.w_37 {width:37em}.w_38 {width:38em}.w_39 {width:39em}.w_40 {width:40em}
+
+ul.list { list-style: disc inside none; }
+ul.list li {
+    padding: 3px;
+}
+
+/*-------------------------SEARCHING-----------------------*/
+div.search button[type=submit] {
+	background:#eee;
+/*    background: linear-gradient(-90deg, black 0%, white 100%);*/
+	border-color: #eee;
+	border-style: solid;
+	border-color: #bbb;
+	color: black;
+	font-weight: bold;
+	border-radius: 8px;
+	height: 35px;
+	display: inline;
+	font-size: 100%;
+	padding:0 15px;
+	margin: 0 10px;
+	position: absolute;
+}
+
+div.search button[type=submit]:hover {
+	color:blue;
+	background: #ddd;
+}
+
+.view a, .index table tr td a {
+	font-weight: bold;
+	color: #0000dd;
+}
+
+.bold { font-weight: bold; }
+.right { text-align:right; }
+.left { text-align:left; }
+.center { text-align:center; }
+.reports { margin: 0 auto; }
+.reports ul li {
+	padding:10px 10px;
+	background-color: #ccc;
+	margin:2px;
+}
+.reports ul li:hover { background-color: #aaa; }
+
+/***** TABLE COLUMN ALIGN  *****/
+.checkoutDetails th:nth-child(1), .checkoutDetails th:nth-child(3), .checkoutDetails th:nth-child(5), .checkoutDetails th:nth-child(6), 
+.checkoutDetails td:nth-child(1), .checkoutDetails td:nth-child(3), .checkoutDetails td:nth-child(5), .checkoutDetails td:nth-child(6), 
+
+.stdetail td:nth-child(2), .stdetail td:nth-child(3), .stdetail td:nth-child(4), .stdetail td:nth-child(5), .stdetail td:nth-child(6), .stdetail td:nth-child(7)
+{
+	text-align:right;
+}
+
+/* 
+ul#navigasi { list-style: none; font: bold 11px Arial; padding: 8px; border-bottom: 1px solid #ddd; height: 15px; }
+ul#navigasi li { float: left; margin-right: 0px; position: relative;  }
+ul#navigasi a	{ color: #FFF; text-decoration:none; font-weight: bold; display: block; padding: 5px 7px 4px 7px; }
+ul#navigasi a:hover,
+ul#navigasi a.active	{ color: #FC0; border-bottom: 1px solid #FC0; }
+ul#navigasi ul	{ display: none; position: absolute; background: rgba(255,255,255,0.2); }
+ul#navigasi ul li	{ float: none; width: 150px; }
+ul#navigasi li:hover ul	{ display: block; }
+*/
